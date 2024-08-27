@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 22%, 93%);
+}
+/* hsl(300, 24%, 96%) */
+body {
+    font-family: "League Spartan", sans-serif;
+    height: 100vh;
+    overflow: hidden; 
+    background-color: var(--light-grayish-magenta);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 1rem auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 18px;
+}
+
+.container .heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.container .heading-section .right-section h1 {
+    width: 300px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 40px;
+
+}
+
+.container .heading-section .right-section p {
+    max-width: 400px;
+    color: var(--dark-grayish-magenta);
+    font-weight:500 ;
+}
+
+.container .heading-section .left-section .primary-box,
+.container .heading-section .left-section .secondly-box,
+.container .heading-section .left-section .third-box {
+    display: flex;
+    width: 400px;
+    background-color: var(--light-grayish-magenta);
+    margin-bottom: 1.7rem;
+    padding: 15px;
+    border-radius:10px;
+}
+
+.container .heading-section .left-section .primary-box img,
+.container .heading-section .left-section .secondly-box img,
+.container .heading-section .left-section .third-box img{ 
+    margin-right: 7px;
+}
+
+.container .heading-section .left-section .primary-box {
+    transform: translatex(-99px );
+}
+
+.container .heading-section .left-section .secondly-box {
+    transform: translatex(-66px);
+}
+
+.container .heading-section .left-section .third-box {
+    transform: translateX(-33px);
+}
+
+.container .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .boxes .box-1,
+.container .boxes .box-2,
+.container .boxes .box-3 {
+    background-color: var(--very-dark-magenta);
+    padding: 20px;
+    margin-right: 2rem;
+    transform: translatey(-50px);
+    border-radius: 10px;
+}
+
+.container .boxes .box-1 .img-box,
+.container .boxes .box-2 .img-box,
+.container .boxes .box-3 .img-box {
+    display: flex;
+    align-items: center;
+}
+
+.container .boxes .box-1 .img-box img,
+.container .boxes .box-2 .img-box img,
+.container .boxes .box-3 .img-box img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 55px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.container .boxes .box-2 {
+    transform: translateY(-25px);
+}
+
+.container .boxes .box-3 {
+    transform: translateY(-12.5px);
+}
+
+.container .boxes .box-1 .img-box .name,
+.container .boxes .box-2 .img-box .name,  
+.container .boxes .box-3 .img-box .name {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.container .boxes .box-1 .img-box .work,
+.container .boxes .box-2 .img-box .work,  
+.container .boxes .box-3 .img-box .work {
+    color: var(--soft-pink);
+}
+
+.container .boxes .box-1 p,
+.container .boxes .box-2 p,  
+.container .boxes .box-3 p {
+    color: #fff;
+    font-weight: 400;
+}
+
+@media (max-width:400px) {
+    body {
+        overflow: auto;
+        background-color: #fff;
+    }
+
+    .container {
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .container .heading-section {
+        display: block;
+    }
+
+    .container .heading-section .right-section h1 {
+        text-align: center;
+    }
+
+    .container .heading-section .right-section p {
+        width: 300px;
+        text-align: center;
+    }
+
+    .container .heading-section .left-section .primary-box,
+    .container .heading-section .left-section .secondly-box,
+    .container .heading-section .left-section .third-box {
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin: 1.7rem auto;
+    }
+
+    .container .heading-section .left-section .primary-box,
+    .container .heading-section .left-section .secondly-box,
+    .container .heading-section .left-section .third-box  {
+        transform: translateX(0);
+    }
+
+    .container .boxes {
+        display: block;
+    }
+
+    .container .boxes .box-1,
+    .container .boxes .box-2,
+    .container .boxes .box-3 {
+        margin: 0 0 1.7rem 0;
+    }
+}
