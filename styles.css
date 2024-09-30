@@ -18,6 +18,9 @@ body {
     height: 100vh;
     overflow-y: hidden; 
     background-color: var(--light-grayish-magenta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -149,7 +152,7 @@ body {
 
     .container {
         height: auto;
-        margin: 0;
+        /* margin:35rem 0 0; */
         border-radius: 0;
         padding: 1.4rem;
     }
